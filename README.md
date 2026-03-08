@@ -8,6 +8,8 @@
 ![RandomForest](https://img.shields.io/badge/Model-Random%20Forest-green)
 ![ROC-AUC](https://img.shields.io/badge/ROC--AUC-0.80-brightgreen)
 
+### 🚀 [Live App → credit-risk-scoring-model-virend3rp.streamlit.app](https://credit-risk-scoring-model-virend3rp.streamlit.app/)
+
 ---
 
 ## 🎯 Business Problem
@@ -117,6 +119,14 @@ credit-risk-scoring-model/
 - Real-time prediction with probability + Approve/Reject decision
 - Risk gauge bar
 - Live SHAP waterfall explanation per applicant
+
+---
+
+## 🌐 Live Demo
+
+**[https://credit-risk-scoring-model-virend3rp.streamlit.app/](https://credit-risk-scoring-model-virend3rp.streamlit.app/)**
+
+Enter any applicant's details and get a real-time default probability, approve/reject decision, and SHAP explanation.
 
 ---
 
