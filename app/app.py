@@ -5,6 +5,11 @@ import pickle
 import json
 import shap
 import matplotlib.pyplot as plt
+from pathlib import Path
+
+# Resolve data path whether running locally (from app/) or on Streamlit Cloud (from repo root)
+ROOT = Path(__file__).parent.parent
+DATA = ROOT / "data" / "processed"
 
 # ─────────────────────────────────────────────
 # Page config
@@ -20,13 +25,13 @@ st.set_page_config(
 # ─────────────────────────────────────────────
 @st.cache_resource
 def load_artefacts():
-    with open('../data/processed/rf_model.pkl', 'rb') as f:
+    with open(DATA / 'rf_model.pkl', 'rb') as f:
         model = pickle.load(f)
-    with open('../data/processed/scaler.pkl', 'rb') as f:
+    with open(DATA / 'scaler.pkl', 'rb') as f:
         scaler = pickle.load(f)
-    with open('../data/processed/shap_explainer.pkl', 'rb') as f:
+    with open(DATA / 'shap_explainer.pkl', 'rb') as f:
         explainer = pickle.load(f)
-    with open('../data/processed/model_meta.json') as f:
+    with open(DATA / 'model_meta.json') as f:
         meta = json.load(f)
     return model, scaler, explainer, meta
 

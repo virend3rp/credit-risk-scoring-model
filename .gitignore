@@ -13,8 +13,8 @@ __pycache__/
 # macOS
 .DS_Store
 
-# Large model/data files (tracked via git-lfs or excluded)
-data/processed/*.pkl
+# Large model/data files
+# data/processed/*.pkl  ← included for Streamlit Cloud deployment
 
 # Keep processed CSVs and PNGs but ignore large binaries above
 # Uncomment below if raw data is sensitive:
