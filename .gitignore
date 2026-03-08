@@ -1,0 +1,21 @@
+# Virtual environment
+venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Large model/data files (tracked via git-lfs or excluded)
+data/processed/*.pkl
+
+# Keep processed CSVs and PNGs but ignore large binaries above
+# Uncomment below if raw data is sensitive:
+# data/raw/
